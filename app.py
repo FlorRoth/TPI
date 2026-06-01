@@ -164,7 +164,7 @@ with tabs[1]:
         if not df_world_nuclear.empty:
             nuclear_world_vals = df_world_nuclear[years_to_plot].apply(pd.to_numeric, errors='coerce').fillna(0).sum()
 
-            st.markdown("### Gráfico Interactivo de Distribución")
+            st.markdown("### Gráfico Interactivo")
             df_grafico = pd.DataFrame({
                 'Año': years_to_plot,
                 'Producción (GWh)': nuclear_world_vals.values
